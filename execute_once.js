@@ -11,3 +11,4 @@
 Native.LoadUrl("https://tomato.ua/kiev/restaurants/mulan");
 // alert("Script executed once.");
 //Native.ShowMsg("ad")
+  
