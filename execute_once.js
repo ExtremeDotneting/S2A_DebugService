@@ -7,8 +7,7 @@
 // --------------------
 
 // Native.Share('https://arigus.tv/upload/iblock/61c/27_al_fl.jpg')
-      
+             
 Native.LoadUrl("https://tomato.ua/kiev/restaurants/mulan");
 // alert("Script executed once.");
 //Native.ShowMsg("ad")
-  

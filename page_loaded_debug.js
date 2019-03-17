@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         ObjorCom
+// @name         hidderScript
 // @version      0.1
 // @include      *
 // @require      https://code.jquery.com/jquery-3.3.1.min.js
@@ -25,7 +25,44 @@ function hideElement(el) {
 }
 
 function objorHidder() {
+    var header=$(".tooppppp")[0];
+    hideElement(header);
 
+    var city=$(".tabs-new")[0];
+    hideElement(city);
+
+    var gd=$(".gdf63636gdfd")[0];
+    hideElement(gd);
+
+    var dle=$("#dle-speedbar")[0];
+    hideElement(dle);
+
+    var dopin=$(".doppiin")[0];
+    hideElement(dopin);
+
+    var izzzbbrrran=$(".izzzbbrrran")[0];
+    hideElement(izzzbbrrran);
+
+    var bnmeaaera=$(".bnmeaaera")[0];
+    hideElement(bnmeaaera);
+
+    var glllapp=$(".glllapp")[0];
+    hideElement(glllapp);
+
+    var hgretteccc=$(".hgretteccc")[0];
+    hideElement(hgretteccc);
+
+    var socialLikes=$(".social-likes")[0];
+    hideElement(socialLikes);
+
+    var fooooter=$(".fooooter")[0];
+    hideElement(fooooter);
+
+    var announcementBlockPost=$(".announcement-block-post")[0];
+    hideElement(announcementBlockPost);
+
+    //$(".rest_mobile_header.active:before").each(function(i, el){el.style.display="none";});
+    $(".page_col1").each(function(i, el){el.style.display="none";});
 }
 
 function tomatoUA_Hidder() {
@@ -62,10 +99,26 @@ function tomatoUA_Hidder() {
     // document.getElementsByClassName("action_panel--item").classList.add('custom-class');
     // document.getElementsByClassName("custom-class").classList.remove('action_panel--item');
     //
-    var customElem = $(".action_panel--item")[0];
-    customElem.style.backgroundColor = "red";
-    //
-    // document.body.style.backgroundColor = 'red';
+    var bottomElem = $(".action_panel--item");
+
+
+    bottomElem.css('display', 'flex');
+    bottomElem.css('justify-content', 'center',);
+    bottomElem.css('align-items', 'center');
+    bottomElem.css('font-size', '18px');
+    bottomElem.css('font-weight', 'bold');
+    $(".action_panel--item, .btn-green-1").text("Заказать");
+    var shareElem=$(".action_panel--item:nth-child(2)");
+    shareElem.text("Поделится");
+    shareElem.click(function(){
+        console.log("share");
+    });
+    window.onload=function(){
+     $(".action_panel--mobile").removeClass('displayNone');
+     $(".action_panel--item").removeClass('displayNone');
+    }
+
+
 
     //$(".rest_mobile_header.active:before").each(function(i, el){el.style.display="none";});
     $(".page_col1").each(function (i, el) { el.style.display = "none"; });
@@ -123,4 +176,3 @@ try {
     Native.ShowMsg(ex);
     throw ex;
 }
-
