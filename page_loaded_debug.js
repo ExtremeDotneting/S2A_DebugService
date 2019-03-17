@@ -1,2 +1,5 @@
 // Code here will be injected after page loaded.
-alert("loaded");
+
+
+//Sync check.
+alert("Page load finished.");
